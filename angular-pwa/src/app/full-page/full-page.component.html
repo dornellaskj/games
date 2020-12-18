@@ -1,0 +1,13 @@
+<div class="header">
+    <p class="header-text" (click)="goHome()">KD's Games</p>
+    <div class="burger burger-slide" [ngClass]="{'open': menuOpen == true}" (click)="openMenu()">
+        <div class="burger-lines"></div>
+    </div>
+</div>
+<div class="menu" [ngClass]="{'open': menuOpen == true}">
+    <button>press me!!</button>
+</div>
+<div class="body-wrapper">
+    <router-outlet>
+    </router-outlet>
+</div>
