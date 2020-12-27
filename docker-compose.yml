@@ -1,6 +1,12 @@
+#docker-compose -build 
+#docker-compose up -d
 version: "3.9"
 services:
     id-server:
         build: ./identity-server
         ports:
             - "5001:80"
+    client-app:
+        build: ./app/angular-pwa
+        ports:
+            - "4200:4200"
